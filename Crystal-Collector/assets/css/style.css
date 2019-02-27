@@ -1,0 +1,60 @@
+.crystal {
+	height: 50px;
+	margin-right: 10px;
+}
+
+body {
+	background: url("../images/background.jpg") no-repeat center fixed;
+	background-size: cover;
+	color: #3B1649;
+}
+
+.col {
+	margin: 3px;
+	border-radius: 5px;
+}
+
+.header {
+	background: #3B1649;
+	color: #FFF;
+}
+
+.gameRules {
+	background: #FFF;
+	padding: 10px;
+}
+
+.randomNumberContainer {
+	background: #FFF;
+	border: 2px solid #3B1649;
+	color: #3B1649;
+	font-size: 2em;
+	font-weight: bold;
+}
+
+.statsContainer {
+	background: #FFF;
+	border: 2px solid #3B1649;
+	color: #3B1649;
+}
+
+.imageContainer {
+	background: #FFF;
+	padding: 5px;
+}
+
+.totalScore {
+	background: #3B1649;
+	color: #FFF;
+}
+
+#scoreSum {
+	font-size: 2em;
+	color: #FFF;
+}
+
+#message {
+	font-size: 2em;
+	font-weight: bold;
+	color: #FFF;
+}
