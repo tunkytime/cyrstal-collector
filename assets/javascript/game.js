@@ -28,7 +28,10 @@ $(document).ready(function() {
 		win: "You won!",
 		lose: "You lost!"
 	};
-	
+		
+	//var clickSound = document.createElement("audio");
+	//	clickSound.setAttribute("src", "assets/sounds/click.wav");
+		
 	for (var i = 0; i < crystals.length; i++) {
 		console.log(crystals[i]);
 	}
@@ -84,4 +87,5 @@ $(document).ready(function() {
 		randomNumber = Math.floor(Math.random() * 120) + 19;
 		$("#randomNumber").text(randomNumber);
 	};
+
 });

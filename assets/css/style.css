@@ -1,65 +1,60 @@
 .crystal {
 	height: 50px;
+	margin-right: 10px;
 }
 
 body {
-	background: url("../images/background.jpg") no-repeat center center fixed;
+	background: url("../images/background.jpg") no-repeat center fixed;
 	background-size: cover;
+	color: #3B1649;
 }
-
-.container {
-	background: blue;
-}
-
-.col-sm-1 {
-	background: yellow;
-}
-
-.col-sm-2 {
-	background: green;
-}
-
-.col-sm-3 {
-	background: orange;
-}
-
-.col-sm-4 {
-	background: pink;
-}
-
-.col-sm-5 {
-	background: teal;
-}
-
-.col-sm-6 {
-	background: pink;
-}
-
-.col-sm-7 {
-	background: gray;
-}
-
-.col-sm-8 {
-	background: white;
-}
-
-.col-sm-9 {
-	background: black;
-}
-
-.col-sm-10 {
-	background: pink;
-}
-
-.col-sm-11 {
-	background: brown;
-}
-
 
 .col {
-	margin: 5px;
+	margin: 3px;
+	border-radius: 5px;
 }
 
+.header {
+	background: #3B1649;
+	color: #FFF;
+}
 
+.gameRules {
+	background: #FFF;
+	padding: 10px;
+}
 
+.randomNumberContainer {
+	background: #FFF;
+	border: 2px solid #3B1649;
+	color: #3B1649;
+	font-size: 2em;
+	font-weight: bold;
+}
 
+.statsContainer {
+	background: #FFF;
+	border: 2px solid #3B1649;
+	color: #3B1649;
+}
+
+.imageContainer {
+	background: #FFF;
+	padding: 5px;
+}
+
+.totalScore {
+	background: #3B1649;
+	color: #FFF;
+}
+
+#scoreSum {
+	font-size: 2em;
+	color: #FFF;
+}
+
+#message {
+	font-size: 2em;
+	font-weight: bold;
+	color: #FFF;
+}
