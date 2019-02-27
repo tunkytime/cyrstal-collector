@@ -1,0 +1,65 @@
+.crystal {
+	height: 50px;
+}
+
+body {
+	background: url("../images/background.jpg") no-repeat center center fixed;
+	background-size: cover;
+}
+
+.container {
+	background: blue;
+}
+
+.col-sm-1 {
+	background: yellow;
+}
+
+.col-sm-2 {
+	background: green;
+}
+
+.col-sm-3 {
+	background: orange;
+}
+
+.col-sm-4 {
+	background: pink;
+}
+
+.col-sm-5 {
+	background: teal;
+}
+
+.col-sm-6 {
+	background: pink;
+}
+
+.col-sm-7 {
+	background: gray;
+}
+
+.col-sm-8 {
+	background: white;
+}
+
+.col-sm-9 {
+	background: black;
+}
+
+.col-sm-10 {
+	background: pink;
+}
+
+.col-sm-11 {
+	background: brown;
+}
+
+
+.col {
+	margin: 5px;
+}
+
+
+
+

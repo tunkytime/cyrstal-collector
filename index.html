@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	
+	<link rel="stylesheet" href="assets/css/style.css">
+
+	<title>Crystal Collector</title>
+</head>
+
+<body>
+
+	<div class="container col col-sm-12">
+		<div class="col col-sm-6">
+			<div class="row">
+				<div class="col-sm-7">
+					<h1>Crystals Collector</h1>
+				</div>
+			</div>
+			
+			<div class="row">
+				<p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam.
+				</p>
+			</div>
+			
+			<div class="row">
+				<div class="col col-sm-4">
+					<span id="randomNumber"></span>
+				</div>
+				<div class="col col-sm-2">
+					<p id="message"></p>
+					<p>Wins: <span id="wins">0</span></p>
+					<p>Losses: <span id="losses">0</span></p>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col col-sm-12">
+					<img src="assets/images/crystalRed.png" class="crystal" id="redCrystal">
+					<img src="assets/images/crystalBlue.png" class="crystal" id="blueCrystal">
+					<img src="assets/images/crystalGreen.png" class="crystal" id="greenCrystal">
+					<img src="assets/images/crystalPurple.png" class="crystal" id="purpleCrystal">
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col col-sm-4">Your total score is:</div>
+			</div>
+			
+			<div class="row">
+				<div class="col col-sm-4">
+					<span id="scoreSum"></span>
+				</div>
+			</div>
+			
+		</div>
+		
+	</div>
+
+	<script src="assets/javascript/game.js"></script>
+</body>
