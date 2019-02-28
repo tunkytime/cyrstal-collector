@@ -5,7 +5,6 @@ $(document).ready(function() {
 	var wins = 0;
 	var losses = 0;
 	var scoreSum = 0
-	var crystalValues = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
 	var crystals = [
 		{
 			name: "redCrystal",
@@ -28,34 +27,24 @@ $(document).ready(function() {
 		win: "You won!",
 		lose: "You lost!"
 	};
-		
-	//var clickSound = document.createElement("audio");
-	//	clickSound.setAttribute("src", "assets/sounds/click.wav");
-		
-	for (var i = 0; i < crystals.length; i++) {
-		console.log(crystals[i]);
-	}
 	
-	// ON CLICK EVENTS
-	$("#redCrystal").on("click", function () {
-		scoreSum += crystals[0].value;
-		winCheck();
-	});
+	var clickSound = document.createElement("audio");
+	clickSound.setAttribute("src", "assets/sounds/click.wav");
+
+	function generateRandomNumber() {
+		randomNumber = Math.floor(Math.random() * 120) + 19;
+		$("#randomNumber").text(randomNumber);
+		for (var i = 0; i < crystals.length; i++) {
+			crystals[i].value = Math.floor(Math.random() * 12 ) + 1;
+		};
+	};
 	
-	$("#blueCrystal").on("click", function () {
-		scoreSum += crystals[1].value;
-		winCheck();
-	});
-	
-	$("#greenCrystal").on("click", function () {
-		scoreSum += crystals[2].value;
-		winCheck();
-	});
-	
-	$("#purpleCrystal").on("click", function () {
-		scoreSum += crystals[3].value;
-		winCheck();
-	});
+	function resetGame () {
+		scoreSum = 0;
+		console.log(crystals);
+		$("#scoreSum").text(scoreSum);
+		generateRandomNumber();
+	};
 	
 	function winCheck() {
 		if (scoreSum == randomNumber) {
@@ -75,20 +64,31 @@ $(document).ready(function() {
 		};
 	};
 
-	function resetGame () {
-		scoreSum = 0;
-		$("#scoreSum").text(scoreSum);
-		generateRandomNumber();
-	};
+	// ON CLICK EVENTS
+	$("#redCrystal").on("click", function () {
+		scoreSum += crystals[0].value;
+		clickSound.play();
+		winCheck();
+	});
 	
-	function generateRandomNumber() {
-		randomNumber = Math.floor(Math.random() * 120) + 19;
-		$("#randomNumber").text(randomNumber);
-		for (var i = 0; i < crystals.length; i++) {
-			crystals[i].value = crystalValues[Math.floor(Math.random() * crystalValues.length)];
-		};
-	};
+	$("#blueCrystal").on("click", function () {
+		scoreSum += crystals[1].value;
+		clickSound.play();
+		winCheck();
+	});
+	
+	$("#greenCrystal").on("click", function () {
+		scoreSum += crystals[2].value;
+		clickSound.play();
+		winCheck();
+	});
+	
+	$("#purpleCrystal").on("click", function () {
+		scoreSum += crystals[3].value;
+		clickSound.play();
+		winCheck();
+	});
 	
 	resetGame();
-	console.log(crystals);
+	
 });

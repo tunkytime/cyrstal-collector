@@ -1,60 +1,94 @@
+
 .crystal {
 	height: 50px;
-	margin-right: 10px;
+	margin-right: 5%;
+}
+
+.crystal:hover {
+	opacity: .9;
+}
+
+.header {
+	background: -webkit-linear-gradient(130deg, rgba(82,32,117,0.9) 40%,rgba(81,184,250,0.7) 80%);
+	color: #FFF;
+	font-family: 'Megrim', cursive;
+
 }
 
 body {
-	background: url("../images/background.jpg") no-repeat center fixed;
+	background: url("../images/background2.jpg") no-repeat center fixed;
 	background-size: cover;
-	color: #3B1649;
+	color: black;
+	font-family: 'Cuprum', cursive;
+	font-size: 1.1em;
+	margin: 0;
 }
 
 .col {
 	margin: 3px;
-	border-radius: 5px;
+	border-radius: 3px;
 }
 
-.header {
-	background: #3B1649;
-	color: #FFF;
+.card {
+	background: -webkit-linear-gradient(-45deg, rgba(255,255,255,.9) 70%,rgba(255,255,255,.8) 100%);
+	border: 2px solid #3C9CFC;
+	color: #1E062D;
+}
+
+.list-group-item {
+	border: 0.5px dashed #3C9CFC
 }
 
 .gameRules {
-	background: #FFF;
+	background: -webkit-linear-gradient(right, rgba(82,32,117,.9) 50%,rgba(39,11,51,0) 100%);
+	color: #FFF;
 	padding: 10px;
 }
 
 .randomNumberContainer {
-	background: #FFF;
-	border: 2px solid #3B1649;
-	color: #3B1649;
-	font-size: 2em;
+	background: -webkit-linear-gradient(-45deg, rgba(255,255,255,.9) 70%,rgba(255,255,255,.8) 100%);
+	border: 2px solid #3C9CFC;	
+	padding-top: 0.5%;
+	color: #1E062D;
+}
+
+#randomNumber {
+	font-size: 2.5em;
 	font-weight: bold;
 }
 
-.statsContainer {
-	background: #FFF;
-	border: 2px solid #3B1649;
-	color: #3B1649;
-}
-
 .imageContainer {
-	background: #FFF;
+	background: -webkit-linear-gradient(-45deg, rgba(255,255,255,0) 70%,rgba(255,255,255,0) 100%);
 	padding: 5px;
 }
 
 .totalScore {
-	background: #3B1649;
-	color: #FFF;
+	background: -webkit-linear-gradient(-45deg, rgba(255,255,255,.9) 70%,rgba(255,255,255,.8) 100%);
+	border: 2px solid #3C9CFC;	
+	color: #1E062D;
+	padding-top: 0.5%;
 }
 
 #scoreSum {
 	font-size: 2em;
-	color: #FFF;
+	font-weight: bold;
 }
 
-#message {
-	font-size: 2em;
-	font-weight: bold;
+.messageContainer {
 	color: #FFF;
+	font-size: 3em;
+	font-weight: bold;
+	font-family: 'Megrim', cursive;
+}
+
+#sparkle {
+  position: fixed;
+  right: 0; 
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  width: auto; 
+  height: auto;
+  opacity: .2;
+  z-index: -100;
 }
