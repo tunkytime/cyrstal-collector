@@ -9,19 +9,19 @@ $(document).ready(function() {
 	var crystals = [
 		{
 			name: "redCrystal",
-			value: crystalValues[Math.floor(Math.random() * crystalValues.length)]
+			value: 0,
 		},
 		{
 			name: "blueCrystal",
-			value: crystalValues[Math.floor(Math.random() * crystalValues.length)]
+			value: 0,
 		},
 		{
 			name: "greenCrystal",
-			value: crystalValues[Math.floor(Math.random() * crystalValues.length)]
+			value: 0,
 		},
 		{
 			name: "purpleCrystal",
-			value: crystalValues[Math.floor(Math.random() * crystalValues.length)]
+			value: 0,
 		}
 	];
 	var messages = {
@@ -35,8 +35,6 @@ $(document).ready(function() {
 	for (var i = 0; i < crystals.length; i++) {
 		console.log(crystals[i]);
 	}
-	
-	resetGame();
 	
 	// ON CLICK EVENTS
 	$("#redCrystal").on("click", function () {
@@ -86,6 +84,11 @@ $(document).ready(function() {
 	function generateRandomNumber() {
 		randomNumber = Math.floor(Math.random() * 120) + 19;
 		$("#randomNumber").text(randomNumber);
+		for (var i = 0; i < crystals.length; i++) {
+			crystals[i].value = crystalValues[Math.floor(Math.random() * crystalValues.length)];
+		};
 	};
-
+	
+	resetGame();
+	console.log(crystals);
 });
