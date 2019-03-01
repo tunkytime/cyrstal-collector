@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-	
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 	<!-- jQuery library -->
@@ -13,7 +14,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 	<!-- Latest compiled JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-	
+
 	<link href="https://fonts.googleapis.com/css?family=Cuprum|Megrim" rel="stylesheet">
 	<link rel="stylesheet" href="assets/css/style.css">
 
@@ -23,18 +24,18 @@
 <body>
 
 	<div class="container">
-	
-	<video autoplay muted id="sparkle">
-		<source src="assets/videos/sparkle.mp4" type="video/mp4">
-	</video>
-	
+
+		<video autoplay muted id="sparkle">
+			<source src="assets/videos/sparkle.mp4" type="video/mp4">
+		</video>
+
 		<div class="col-sm-12">
 			<div class="row">
 				<div class="col col-sm-5 header text-center">
 					<h1>Crystal Collector</h1>
 				</div>
 			</div>
-			
+
 			<div class="row">
 				<div class="col col-sm-7 gameRules">
 					<p>Each crystal below has a random point value from <strong>1-12</strong> - this changes each round.</p>
@@ -47,14 +48,14 @@
 					</p>
 				</div>
 			</div>
-			
+
 			<div class="row">
 				<div class="col col-sm-4 randomNumberContainer text-center">
 					<span><em>the random number is...</em></span>
 					<br>
 					<span id="randomNumber"></span>
 				</div>
-				
+
 				<div class="col col-sm-3">
 					<div class="card">
 						<ul class="list-group list-group-flush">
@@ -62,9 +63,9 @@
 							<li class="list-group-item bg-transparent">Losses: <span id="losses">0</span></li>
 						</ul>
 					</div>
-				</div>			
+				</div>
 			</div>
-			
+
 			<div class="row">
 				<div class="col col-sm-4 imageContainer text-center">
 					<img src="assets/images/crystalRed.png" class="crystal" id="redCrystal">
@@ -80,18 +81,17 @@
 					<br>
 					<span id="scoreSum"></span>
 				</div>
-				
+
 				<div class="col col-sm-3 messageContainer text-center">
 					<p id="message"></p>
 				</div>
 				<div class="col col-sm-4"></div>
 			</div>
-			
 
 		</div>
-		
+
 	</div>
 
 	<script src="assets/javascript/game.js"></script>
-	
+
 </body>
