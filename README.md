@@ -1,4 +1,6 @@
-# unit-4-game
+# Crystal Collector
+
+## Gameplay
 
 1. The game starts with a random number shown on the screen.
 2. Four crystals are displayed on the bottom of the screen, each with different point values.
